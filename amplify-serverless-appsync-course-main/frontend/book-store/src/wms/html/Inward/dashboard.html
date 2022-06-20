@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EMIZA WMS - Factory Model</title>
+		<!-- BEGIN META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="your,keywords">
+		<meta name="description" content="Short explanation about this website">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/bootstrap.css?1422792965" />
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/materialadmin.css?1425466319" />
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/font-awesome.min.css?1422529194" />
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+	</head>
+	<body>
+		<!-- BEGIN HEADER-->
+		<header id="header">
+			<div class="headerbar">
+				<div class="headerbar-left small-padding text-xl">
+					<h2>Warehouse Processing View/Dashboard</h2>
+				</div>
+			</div>
+		</header>
+
+	<div style="background-color: white;">
+		<div id="content">
+			<section style="padding-top: 25px;" >
+				<div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row text-xl row">
+								<div class="col-md-6"><b>Operation</b></div>
+								<div class="col-md-6" style="text-align: center"><b>Pending count</b></div>
+							</div>
+							<div id="id-01" class="card panel text-lg lineScrolls" style="overflow-y:auto;overflow-x:hidden;"></div>
+							<div id="id-02" style="display:hidden;" class="card panel" style="overflow-y:auto;overflow-x:hidden;">
+								<div class="card-head card-head-xs style-default collapsed" data-toggle="collapse" data-parent="#accordion20" data-target="#accordion20-1" aria-expanded="false" style="margin-bottom: 2px;">
+									<header>Outward</header>
+									<header style="margin-left:48%;">8</header>
+								</div>
+								<!-- <div id="id-01"></div> -->
+								<div id="accordion20-1" class="collapse" aria-expanded="false" style="height: 0px;">
+									<div class="card-body" style="padding:10px">
+										<div id="stages" class="card-head card-head-xs style-default-light collapsed" style="margin-bottom: 2px;" data-toggle="collapse" data-parent="#accordion20" data-target="#accordion20-1" aria-expanded="false" on:click="{getSkudetails(val.Category.SubCategory[i])}">
+											<header>Stage-01</header>
+											<header style="padding-left: 46%;">Qty </header>
+										</div>
+										<div id="accordion20-1" class="collapse" aria-expanded="false" style="height: 0px;">
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-01</div>
+												<div class="col-md-6" style="text-align:right">1</div>
+											</div>
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-02</div>
+												<div class="col-md-6" style="text-align:right">1</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body" style="padding:10px">
+										<div class="card-head card-head-xs style-default-light collapsed" style="margin-bottom: 2px;" data-toggle="collapse" data-parent="#accordion30" data-target="#accordion30-1" aria-expanded="false" on:click="{getSkudetails(val.Category.SubCategory[i])}">
+											<header>Stage-02</header>
+											<header style="padding-left: 46%;">Qty </header>
+										</div>
+										<div id="accordion30-1" class="collapse" aria-expanded="false" style="height: 0px;">
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-03</div>
+												<div class="col-md-6" style="text-align:right">5</div>
+											</div>
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-04</div>
+												<div class="col-md-6" style="text-align:right">8</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="id-02" style="display:hidden;" class="card panel" style="overflow-y:auto;overflow-x:hidden;">
+								<div class="card-head card-head-xs style-default collapsed" data-toggle="collapse" data-parent="#accordion20" data-target="#accordion20-1" aria-expanded="false" style="margin-bottom: 2px;">
+									<header>Putaway</header>
+									<header style="margin-left:48%;">8</header>
+								</div>
+								<!-- <div id="id-01"></div> -->
+								<div id="accordion20-1" class="collapse" aria-expanded="false" style="height: 0px;">
+									<div class="card-body" style="padding:10px">
+										<div id="stages" class="card-head card-head-xs style-default-light collapsed" style="margin-bottom: 2px;" data-toggle="collapse" data-parent="#accordion20" data-target="#accordion20-1" aria-expanded="false" on:click="{getSkudetails(val.Category.SubCategory[i])}">
+											<header>Stage-01</header>
+											<header style="padding-left: 46%;">Qty </header>
+										</div>
+										<div id="accordion20-1" class="collapse" aria-expanded="false" style="height: 0px;">
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-01</div>
+												<div class="col-md-6" style="text-align:right">1</div>
+											</div>
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-02</div>
+												<div class="col-md-6" style="text-align:right">1</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body" style="padding:10px">
+										<div class="card-head card-head-xs style-default-light collapsed" style="margin-bottom: 2px;" data-toggle="collapse" data-parent="#accordion30" data-target="#accordion30-1" aria-expanded="false" on:click="{getSkudetails(val.Category.SubCategory[i])}">
+											<header>Stage-02</header>
+											<header style="padding-left: 46%;">Qty </header>
+										</div>
+										<div id="accordion30-1" class="collapse" aria-expanded="false" style="height: 0px;">
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-03</div>
+												<div class="col-md-6" style="text-align:right">5</div>
+											</div>
+											<div class="card-body" style="padding:10px">
+												<div class="col-md-6">Cust-04</div>
+												<div class="col-md-6" style="text-align:right">8</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6" id="txnDetails" style="display: none">
+							<div class="card-body">
+								<div class="col-md-4" style="margin-top: -5%; margin-left: 44%;"><h4>PO Details</h4></div>
+								<table class="table table-striped no-margin table-hover table-condensed" style="overflow-y:auto;overflow-x:hidden;">
+									<thead>
+										<tr>
+											<th >Customer</th>
+											<th >Order Id</th>
+										</tr>
+									</thead>
+									<tbody id="poDetails">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+
+		</div>
+			<!-- BEGIN MENUBAR-->
+	</div><!--end #base-->	
+	<!-- END BASE -->
+
+	<!-- BEGIN JAVASCRIPT -->		
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="../assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+<script src="../assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
+<script src="../assets/js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/js/libs/spin.js/spin.min.js"></script>
+<script src="../assets/js/libs/autosize/jquery.autosize.min.js"></script>
+<script src="../assets/js/libs/bootstrap-rating/bootstrap-rating-input.min.js"></script>
+<script src="../assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+<!-- <script src="../assets/js/core/source/App.js"></script>
+<script src="../assets/js/core/source/AppNavigation.js"></script>
+<script src="../assets/js/core/source/AppOffcanvas.js"></script>
+<script src="../assets/js/core/source/AppCard.js"></script>
+<script src="../assets/js/core/source/AppForm.js"></script>
+<script src="../assets/js/core/source/AppNavSearch.js"></script>
+<script src="../assets/js/core/source/AppVendor.js"></script>
+<script src="../assets/js/core/demo/Demo.js"></script>
+<script src="../assets/js/core/demo/DemoDocs.js"></script> -->
+<script src="../assets/css/main.css"></script>
+<script src="../js/dashboard.js"></script>
+<!-- <script src="../js/so-po-processing.js"></script> -->
+
+	
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<!-- END JAVASCRIPT -->
+
+	
+	
+	</body>
+</html>

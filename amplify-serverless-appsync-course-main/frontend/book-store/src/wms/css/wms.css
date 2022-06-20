@@ -1,0 +1,13 @@
+.displayHeader{
+    /* background-image: linear-gradient(90deg, #28B5AB 0%, #00819D 100%); */
+    background-color: #9e9494;
+}
+
+.lineScrolls{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.linesSt:nth-child(odd) {
+    background-color: #e3f3ee;
+}

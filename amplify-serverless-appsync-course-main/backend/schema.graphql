@@ -9,7 +9,7 @@ type Subscription{
 }
 
 type Query {
-    getBookById(bookId: ID!): Book! @aws_iam
+    getBookById(bookId: ID!): Book!
     listBooks(limit: Int!, nextToken: String): BooksPage!
     myOrders(limit: Int!, nextToken: String): orderItemsPage!
 }
